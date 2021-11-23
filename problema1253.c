@@ -5,7 +5,7 @@ int main(){
 	int n, i=0, j, key, lengh;
 	char *word=(char*) malloc(sizeof(char)*50);
 	char alfabeto[26][26] = {
-		"ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+	"ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         "ZABCDEFGHIJKLMNOPQRSTUVWXY",
         "XZABCDEFGHIJKLMNOPQRSTUVWX",
         "XYZABCDEFGHIJKLMNOPQRSTUVW",
