@@ -13,9 +13,8 @@ int main() {
                 p=i+1;
                 if(j+1<p) p=j+1;
                 if(n-i<p) p=n-i;
-                if(n-j<p) p=n-j;                
-                	printf(" ");	
-                	printf("%3d", p);
+                if(n-j<p) p=n-j;
+           		    printf("%3d", p);
             }
             printf("\n");
         }
