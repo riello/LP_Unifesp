@@ -6,7 +6,7 @@
 
 void validadigitos(int *dig) {
     int i;
-    for (i = 0; i <= 10; i++)
+    for (i = 0; i <= TAM; i++)
         dig[i] = 0;
 }
 
