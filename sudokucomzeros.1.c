@@ -4,7 +4,7 @@
 #define TAM 9
 
 int validalinha(int mat[TAM][TAM]){
-    int i, j, validade[10], aux;
+    int i, j, validade[10], x;
 
     for(i=0; i<TAM; i++){
         validade[0] = 1;
@@ -12,8 +12,8 @@ int validalinha(int mat[TAM][TAM]){
             validade[j] = 0;   
         }
         for(j=0; j<TAM; j++){
-                aux = mat[i][j];
-                validade[aux] += 1;
+                x = mat[i][j];
+                validade[x] += 1;
         }
         for(j=1; j<=TAM; j++){
             if(validade[j] > 1){
@@ -25,7 +25,7 @@ int validalinha(int mat[TAM][TAM]){
 }
 
 int validacoluna(int mat[TAM][TAM]){
-    int i, j, validade[10], aux;
+    int i, j, validade[10], x;
 
     for(i=0; i<TAM; i++){
         validade[0] = 1;
@@ -33,8 +33,8 @@ int validacoluna(int mat[TAM][TAM]){
             validade[j] = 0;   
         }
         for(j=0; j<TAM; j++){
-                aux = mat[j][i];
-                validade[aux] += 1;
+                x = mat[j][i];
+                validade[x] += 1;
         }
         for(j=1; j<=TAM; j++){
             if(validade[j] > 1){
